@@ -1,0 +1,25 @@
+body {
+
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 8rem;
+  margin: 0;
+}
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+a {
+  color: #888;
+  font-size: 1rem;
+}
+
+/* https://www.gamerclick.it/prove/img_tmp/201904/death%20stranding%20data%20di%20uscita.jpg */
