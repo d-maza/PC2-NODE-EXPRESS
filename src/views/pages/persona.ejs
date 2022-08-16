@@ -9,8 +9,10 @@
     
 </head>
 <body>
+    
     <%- include('../pages/bloques/head') %>
     <%- include('../pages/bloques/header') %>
+    <div class="container">
     <ul>
         <% persona.forEach((persona)=> { %>
             <li>
@@ -24,6 +26,7 @@
             <hr />
         <% }) %>
     </ul>
+    </div>
 </body>
 <%- include('../pages/bloques/footer') %>
 </html>

@@ -1,6 +1,6 @@
 const express = require("express"); 
 const app = express();
-const port = 3000; // Puerto asignado
+let port = process.env.PORT || 3000;
 
 const path = require("path");
 app.set("view engine", "ejs"); 
@@ -23,6 +23,5 @@ app.use((req, res) => {
 
 // Levantado el puerto (port)
 app.listen(port, () => {
-  console.log(`Servideor iniciado en el puerto ${port} ...`);
+  console.log(`Server listening at http://localhost:${port}`);
 });
-

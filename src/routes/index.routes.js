@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 
 
-let nombre = ["Carles", "Silvia", "Claudia", "Susana", "David"];
+let nombre = ["Homer", "Marge", "Bart", "Lisa", "Maggie"];
 const posts = [
-  { title: nombre[0], tipo: "Profesor"},
-  { title: nombre[1], tipo: "Profesora"},
-  { title: nombre[2], tipo: "Secretaria"},
-  { title: nombre[3], tipo: "Secretaria"},
-  { title: nombre[4], tipo: "Alumno"},
+  { title: nombre[0], tipo: "Homer J. Simpson"},
+  { title: nombre[1], tipo: "Marjorie Jaqueline Bouvier Simpson"},
+  { title: nombre[2], tipo: "Bartholomew Jojo Simpson"},
+  { title: nombre[3], tipo: "SLisa Marie Simpson"},
+  { title: nombre[4], tipo: "Margaret Abigail Simpson Bouvie"},
 ];
 
 // GET (/persona) con render de ejs info: https://ejs.co/
