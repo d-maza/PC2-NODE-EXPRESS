@@ -1,24 +1,31 @@
-﻿﻿![Logo](/public/img/code.png)
+﻿﻿<div align="center" background-color ="rgba(41, 37, 37, 0.795)"><img width="400" src="https://raw.githubusercontent.com/d-maza/static_web_react_demo/main/src/assets/DiveCode-bg.png" alt="d- maza" /></div>
 
+<hr>
 
-# Curso Open Source Back End Web Developer**
+#  PC2-NODE-EXPRESS 🐙
 
-### Practica 2
+![My etiqueta](https://img.shields.io/badge/David%20Maza-DiveCode%F0%9F%90%99-blue)  ![Node Version](https://img.shields.io/badge/Node-v16-green) ![GitHub repo size](https://img.shields.io/github/repo-size/d-maza/mystrore_back-MEAN) ![GitHub repo licence](https://img.shields.io/github/license/d-maza/mystrore_back-MEAN) ![Codigoutil](https://img.shields.io/badge/Co--Founder-CodigoUtil%F0%9F%92%A1-orange) 
 
+##  Description 
 
-Vamos a crear una aplicación utilizando Express JS. En ella, tendremos un array de 5 nombres y dos rutas.
+-  Set up a served with express.
+-  Make the routes and pass the parameters.
+-  Perform rendering with an Ejs template engine
 
-1. Una será de tipo “/persona” y la otra será “/persona/:parametro”.
+Let's create an application using Express JS. In it, we will have an array of 5 names and two routes.
 
-2. Cuando entremos en la primera ruta, nos devolverá el array; mientras que cuando entremos por la segunda, nos devolverá la persona solicitada.
+1. One will be of type "/person" and the other will be "/person/:p arameter".
 
-     Elementos recomendados:
+2. When we enter the first path, it will return the array; while when we enter through the second, the requested person will return us.
 
-      1. Complejiza el ejemplo.
+Recommended items:
 
-      2. Crea un aspecto formal.
-     
-#### Habilidades y conocimientos
+1. Make the example more complex.
+
+2. Create a formal look.
+
+    
+#### Habilidades y conocimientos 🧰
 
  - JavaScript
  - NodeJS
@@ -29,31 +36,37 @@ Vamos a crear una aplicación utilizando Express JS. En ella, tendremos un array
  - Como hacer un README
  
   
-#### Normar de uso 
-Recuerda  que es necesario tener instado NodeJS y decasrgar los repositorios de Express y Ejs
+#### ### Rules of use 🤜🏼🤛🏼
 
-- npm install express
-- npm install ejs
+- Run the clone repository in your terminal:
 
-El ejercicio de ejecuta en el archivo app.js de la carpeta:`src`
+``git clone https://github.com/d-maza/PC2-NODE-EXPRESS.git``
+
+
+- Access the folder with the command:
+
+`cd PC2-NODE-EXPRESS `
+
+- Remember that it is necessary to have NodeJS installed, download the dependencies with the command.
+
+ `npm i `
+
+The exercise is run in the app.js file of the folder:`src`
 
 1.  `cd src`
-2.  `node app`
+2.  `node app` 
 
-#### Guías de referencia
+#### Reference guides:
 
  - [Node.js](https://nodejs.org/es/)
  - [Express](http://expressjs.com/)
- - [EJS -- Plantillas JavaScript integradas](https://ejs.co/#features)
- - [Manual Node (Castellano).pdf](https://riptutorial.com/Download/node-js-es.pdf)
+ - [EJS](https://ejs.co/#features)
 
+## Pull requests and issues are welcome
 
+If you find anything that can be improved, please submit a pull request.
 
+## Authors
 
-
-## Las solicitudes de extracción y los problemas son bienvenidos
-
-Si encuentra algo que se pueda mejorar, o las mejores prácticas que podrían adoptarse en cualquier cosa relacionada con NodeJS, envíe una solicitud de extracción.
-
-![:octocat:](https://github.githubassets.com/images/icons/emoji/octocat.png ":octocat:") [d-maza](https://github.com/d-maza)
+- [@D-MAZA](https://github.com/d-maza)
 

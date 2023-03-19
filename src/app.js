@@ -1,14 +1,13 @@
-const express = require("express"); 
+const express = require("express");
 const app = express();
+const {join} = require('node:path')
 let port = process.env.PORT || 3000;
 
 const path = require("path");
-app.set("view engine", "ejs"); 
+// app.set("view engine", "ejs");
 
-// Starting 
-app.get("/", (req, res) => {
-  res.render("pages/index");
-});
+app.set("views", join(__dirname, "views"));
+app.set("view engine", "ejs");
 
 // Static files (Web)
 app.use(express.static(path.join(__dirname, "../public")));

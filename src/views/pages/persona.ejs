@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-<head >
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Persona </title>
-    
-</head>
-<body>
-    
-    <%- include('../pages/bloques/head') %>
-    <%- include('../pages/bloques/header') %>
+    <title>Persona</title>
+  </head>
+  <body>
+    <%- include('../pages/bloques/head') %> <%-
+    include('../pages/bloques/header') %>
     <div class="container">
-    <ul>
+      <ul class="list-group shadow-lg p-3 bg-warning">
         <% persona.forEach((persona)=> { %>
-            <li>
-                <h4 style="color:rgb(114, 114, 40); font-family:arial; ">
-                    <%= persona.title %>
-                </h4>
-                <h6 style="font-size:2ex ;">
-                    <%= persona.tipo %>
-                </h6>
-            </li>
-            <hr />
+        <li class="list-group-item p-3">
+          <h5 class="text-danger fw-bolder">
+            <%= persona.title %>
+          </h5>
+          <h6 ><%= persona.name %></h6>
+          <a  href="<%= persona.uri %>" ><%= persona.uri %></a>
+        </li>
         <% }) %>
-    </ul>
+      </ul>
     </div>
-</body>
-<%- include('../pages/bloques/footer') %>
+  </body>
+  <%- include('../pages/bloques/footer') %>
 </html>

@@ -6,44 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
   </head>
-  <body>
+  <body class="">
     <%- include('../pages/bloques/head') %> <%-
     include('../pages/bloques/header') %>
-   
-
     <br />
     <div class="container">
-      <a href="/persona" class="nav-link px-2">Persona</a>
-    <hr>
-      <h5>PRÁCTICA 2</h5>
-      <br />
-      <br />
-      <ol>
-        <li>
-          Vamos a crear una aplicación utilizando Express JS. En ella, tendremos
-          un array de 5 nombres y dos rutas.
-        </li>
-        <li>
-          Una será de tipo “/persona” y la otra será “/persona/:parametro”.
-        </li>
-        <li>
-          Cuando entremos en la primera ruta, nos devolverá el array; mientras
-          que cuando entremos por la segunda, nos devolverá la persona
-          solicitada.
-        </li>
-        <li>Elementos recomendados:</li>
-        <br />
-        <ul>
-          * Complejiza el ejemplo.
-        </ul>
-        <ul>
-          * Crea un aspecto formal.
-        </ul>
-      </ol>
+      <a href="/persona" class=" px-2">Persona</a>
+      <hr />
+      <div class="card bg-secondary shadow">
+        <h5 class="mt-4 mx-auto text-dark mb-3">PRÁCTICA 2</h5>
+        <ol class="mx-4 text-light p-5">
+          <li>
+            Vamos a crear una aplicación utilizando Express JS. En ella, tendremos
+            un array de 5 nombres y dos rutas.
+          </li>
+          <li>
+            Una será de tipo “/persona” y la otra será “/persona/:parámetro”.
+          </li>
+          <li>
+            Cuando entremos en la primera ruta, nos devolverá el array; mientras
+            que cuando entremos por la segunda, nos devolverá la persona
+            solicitada.
+          </li>
+          <li>Elementos recomendados:</li>
+          <br />
+          <ul>
+            * Complejiza el ejemplo.
+          </ul>
+          <ul>
+            * Crea un aspecto formal.
+          </ul>
+        </ol>
+      </div>
     </div>
   </body>
-<br>
-<br>
-<br>
   <%- include('../pages/bloques/footer') %>
 </html>

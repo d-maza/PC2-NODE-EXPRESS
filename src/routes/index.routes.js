@@ -1,20 +1,24 @@
 const express = require("express");
 const router = express.Router();
 
-
 let nombre = ["Homer", "Marge", "Bart", "Lisa", "Maggie"];
-const posts = [
-  { title: nombre[0], tipo: "Homer J. Simpson"},
-  { title: nombre[1], tipo: "Marjorie Jaqueline Bouvier Simpson"},
-  { title: nombre[2], tipo: "Bartholomew Jojo Simpson"},
-  { title: nombre[3], tipo: "SLisa Marie Simpson"},
-  { title: nombre[4], tipo: "Margaret Abigail Simpson Bouvie"},
+
+const persona = [
+  { title: nombre[0], name: "Homer J. Simpson", uri: "http://localhost:3000/persona/Homer" },
+  { title: nombre[1], name: "Marjorie Jaqueline Bouvier Simpson", uri: "http://localhost:3000/persona/Marge" },
+  { title: nombre[2], name: "Bartholomew Jojo Simpson", uri: "http://localhost:3000/persona/Bart" },
+  { title: nombre[3], name: "Lisa Marie Simpson", uri: "http://localhost:3000/persona/Lisa" },
+  { title: nombre[4], name: "Margaret Abigail Simpson Bouvie", uri: "http://localhost:3000/persona/Maggie" },
 ];
+
+router.get("/", (req, res) => {
+  res.render("pages/index");
+});
 
 // GET (/persona) con render de ejs info: https://ejs.co/
 router.get("/persona", (req, res) => {
-  res.render("pages/persona", {
-    persona: posts,
+  res.render("pages/persona.ejs", {
+    persona: persona
   });
 });
 
